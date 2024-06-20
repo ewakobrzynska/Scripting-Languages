@@ -1,5 +1,66 @@
 # ScriptingLanguages
 ___
+
+<details>
+  <summary><strong>Python Battleship Game</strong></summary>
+
+<table>
+  <tr>
+    <td width="40%">
+      <p align="center">
+        <img src="./assets/python.png" alt="Battleship Game - Python" width="180"/>
+      </p>
+    </td>
+    <td width="60%">
+      The Python Battleship game project is a computer implementation of the classic game "Battleship" designed for single-player interaction. The player attempts to sink computer-generated opponent ships by correctly identifying their coordinates on a 10x10 square board.
+    </td>
+  </tr>
+</table>
+
+### Overview
+
+The Python Battleship game project consists of several classes responsible for managing gameplay:
+
+1. **Coords Class**
+   - `__init__(self, x, y)`: Initializes coordinates (x, y).
+   - `__eq__(self, other)`: Compares two coordinate objects.
+   - `__repr__(self)`: Returns a string representation of the coordinates.
+
+2. **Board Class**
+   - `__init__(self, hid=False, size=10)`: Initializes the game board with default size 10x10.
+   - `add_ship(self, ship)`: Adds a ship to the board with specified parameters (size, orientation).
+   - `contour(self, ship, verb=False)`: Prevents ships from overlapping or touching.
+
+3. **Ship Class**
+   - `__init__(self, kratka, maszty, orientacja)`: Initializes a ship with specified parameters (coordinates, size, orientation).
+   - `statekPlynie(self)`: Places the ship on the board according to its orientation.
+
+4. **Player Class**
+   - `__init__(self, board)`: Initializes a player with a game board.
+   - `wprowadzWspolrzedne(self)`: Retrieves player's input coordinates.
+   - `wykonajRuch(self)`: Handles player's move by shooting at the opponent's board.
+
+5. **Game Class**
+   - `__init__(self, size=10)`: Initializes the game with a board size.
+   - `rozmiescStatki(self)`: Randomly places ships on the board.
+   - `start(self)`: Starts the game and allows the player 30 attempts to shoot. The game ends when all opponent ships are sunk.
+
+### Running the Game
+
+To run the game, execute the following command:
+```bash
+python3 statki.py
+```
+
+### Notes
+
+- Ships are represented by segments that occupy consecutive squares either vertically or horizontally.
+- The game is played on a 10x10 board where the player attempts to sink all opponent ships within 30 attempts.
+
+</details>
+
+<br>
+
 <details>
   <summary><strong>Bash Hangman Game</strong></summary>
 
@@ -59,7 +120,7 @@ The game ends when the player correctly guesses the word or exceeds 6 incorrect 
 ### Limitations
 
 - The script assumes that words to be guessed are defined within the `get_random_word()` function.
-- The game supports only lowercase and uppercase letters of the English alphabet.
+- The game supports only lowercase and uppercase letters of the Polish alphabet.
 
 </details>
 
