@@ -1,5 +1,7 @@
 # ScriptingLanguages
----
+___
+<details>
+  <summary><strong>Bash Hangman Game</strong></summary>
 
 <table>
   <tr>
@@ -59,7 +61,12 @@ The game ends when the player correctly guesses the word or exceeds 6 incorrect 
 - The script assumes that words to be guessed are defined within the `get_random_word()` function.
 - The game supports only lowercase and uppercase letters of the English alphabet.
 
---
+</details>
+
+<br>
+
+<details>
+  <summary><strong>Perl Task List Manager</strong></summary>
 
 <table>
   <tr>
@@ -128,4 +135,7 @@ perl todo.pl
 - The script uses a simple text file (`todo.txt`) to store tasks, each formatted with a due date, priority, and description.
 - Minimal input validation is performed, so users are expected to input information in the specified format.
 
---
+</details>
+
+---
+
