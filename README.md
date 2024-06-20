@@ -5,7 +5,7 @@
   <tr>
     <td width="40%">
       <p align="center">
-        <img src="./assets/bash.png" alt="Hangman Game - Bash" width="200"/>
+        <img src="./assets/bash.png" alt="Hangman Game - Bash" width="180"/>
       </p>
     </td>
     <td width="60%">
@@ -13,7 +13,6 @@
     </td>
   </tr>
 </table>
-
 
 ### Functions
 
@@ -60,4 +59,73 @@ The game ends when the player correctly guesses the word or exceeds 6 incorrect 
 - The script assumes that words to be guessed are defined within the `get_random_word()` function.
 - The game supports only lowercase and uppercase letters of the English alphabet.
 
+--
 
+<table>
+  <tr>
+    <td width="40%">
+      <p align="center">
+        <img src="./assets/perl.png" alt="Task List Manager - Perl" width="180"/>
+      </p>
+    </td>
+    <td width="60%">
+      The Task List Manager is a simple command-line Perl script designed to assist users in managing their to-do tasks. It allows users to add new tasks, view the task list, mark tasks as completed, remove completed tasks, and exit the program. The script utilizes a configuration file and provides a basic menu-driven interface.
+    </td>
+  </tr>
+</table>
+
+### Features
+
+1. **Configuration File**
+
+   The script uses a configuration file (`.todolistrc`) to store user-defined settings. If the configuration file does not exist, the script creates it with default settings.
+   
+   Default Configuration:
+   - Priorities: LOW, MEDIUM, HIGH
+   - Date Format: %Y-%m-%d
+
+2. **Task File**
+
+   The task list is stored in a file named `todo.txt`. If the file does not exist, the script creates an empty one.
+
+3. **Menu Interface**
+
+   The script presents a menu-driven interface with the following options:
+   - Add Task
+     - Prompts the user to enter a new task description, set priority (LOW/MEDIUM/HIGH), and due date. Adds the task to the list.
+   - View Tasks
+     - Displays a numbered list of tasks.
+   - Mark as Completed
+     - Displays the task list and prompts the user to enter the task number to mark as completed.
+     - Marks the selected task as completed.
+   - Clear Completed
+     - Removes all completed tasks from the list.
+   - Exit
+     - Quits the program.
+   - Help (Options)
+     - Displays a help menu explaining available options.
+
+4. **Command-Line Options**
+
+   The script supports command-line options:
+   - `-h` or `--help`: Displays detailed help information.
+
+### Usage
+
+#### Running the Script
+
+To run the script, use the following command:
+```bash
+perl todo.pl
+```
+
+#### Options
+
+- `-h` or `--help`: Displays detailed help menu.
+
+### Notes
+
+- The script uses a simple text file (`todo.txt`) to store tasks, each formatted with a due date, priority, and description.
+- Minimal input validation is performed, so users are expected to input information in the specified format.
+
+--
