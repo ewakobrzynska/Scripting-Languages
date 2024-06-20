@@ -1,17 +1,19 @@
 # ScriptingLanguages
 ---
 
-```markdown
-# Hangman Game - Bash
+<table>
+  <tr>
+    <td width="40%">
+      <p align="center">
+        <img src="./assets/bash.png" alt="Hangman Game - Bash" width="200"/>
+      </p>
+    </td>
+    <td width="60%">
+      The "hangman.sh" script is a simple hangman game written in Bash. The player's objective is to guess a randomly chosen word. Each time an incorrect letter is guessed, another part of the hangman is drawn. The player has a limited number of attempts (6) to guess the word.
+    </td>
+  </tr>
+</table>
 
-## Author
-Ewa Kobrzyńska  
-Scripting Languages 2023/2024  
-Jagiellonian University  
-
-## Program Description
-
-The "hangman.sh" script is a simple hangman game written in Bash. The player's objective is to guess a randomly chosen word. Each time an incorrect letter is guessed, another part of the hangman is drawn. The player has a limited number of attempts (6) to guess the word.
 
 ### Functions
 
